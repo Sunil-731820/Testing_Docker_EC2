@@ -24,26 +24,27 @@
     </style>
 </head>
 <body>
-    <h2>List of Employees</h2>
-    <table>
+<h2>List of Employees</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Department</th>
+        <th>Salary</th>
+    </tr>
+    <c:forEach var="emp" items="${employees}">
         <tr>
-            <th>ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Department</th>
-            <th>Salary</th>
+            <td>${emp.id}</td>
+            <td>${emp.firstName}</td>
+            <td>${emp.lastName}</td>
+            <td>${emp.email}</td>
+            <td>${emp.department}</td>
+            <td>${emp.salary}</td>
         </tr>
-        <c:forEach var="emp" items="${employees}">
-            <tr>
-                <td>${emp.id}</td>
-                <td>${emp.firstName}</td>
-                <td>${emp.lastName}</td>
-                <td>${emp.email}</td>
-                <td>${emp.department}</td>
-                <td>${emp.salary}</td>
-            </tr>
-        </c:forEach>
-    </table>
+    </c:forEach>
+</table>
+
 </body>
 </html>

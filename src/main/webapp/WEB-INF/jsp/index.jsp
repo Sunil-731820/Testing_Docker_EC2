@@ -24,6 +24,15 @@
                 <td>${user.lastName}</td>
             </tr>
         </c:forEach>
+
+	<h3>if you want to see the data of the mongoDb You just click on below button </h3>
+	<h2>Welcome to Employee Management</h2>
+
+    <!-- Button that navigates to employees list -->
+    <form action="employees" method="get">
+        <button type="submit">View Employees</button>
+    </form>
+	        
     </table>
 </body>
 </html>
